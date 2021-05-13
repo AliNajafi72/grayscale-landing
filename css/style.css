@@ -89,9 +89,18 @@ nav span {
 }
 
 .about-section-paragraph {
-    font-size: 1.6em;
     line-height: 4rem;
     color: lightgrey;
+}
+
+.project-section {
+    background-color: #f2f2f2;
+}
+
+.project-section div p {
+    font-size: 1.6em;
+    color: gray;
+    line-height: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,6 +111,34 @@ nav span {
     .header span {
         width: 100%;
     }
+
+    .about-section-paragraph {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .project-section-text-container {
+        border-left: none;
+        text-align: center;
+    }
+}
+
+.misty, .mountains {
+    background-color: black;
+}
+
+.line-seperator {
+    background-color: #00897B;
+    height: 5px;
+    width: 200px;
+}
+
+.gallery-section {
+    background-color: #f2f2f2;
+}
+
+.contact-section {
+    background-image: url("../assets/img/bg-signup.jpg");
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -112,6 +149,16 @@ nav span {
 
     .header span {
         width: 100%;
+    }
+
+    .about-section-paragraph {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .project-section-text-container {
+        border-left: none;
+        text-align: center;
     }
 }
 
@@ -124,6 +171,16 @@ nav span {
     .header span {
         width: 35rem;
     }
+
+    .about-section-paragraph {
+        font-size: 1.6em;
+        width: 100%;
+    }
+
+    .project-section-text-container {
+        border-left: none;
+        text-align: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -135,6 +192,16 @@ nav span {
     .header span {
         width: 35rem;
     }
+
+    .about-section-paragraph {
+        font-size: 1.6em;
+        width: 50%;
+    }
+
+    .project-section-text-container {
+        border-left: solid 10px #00897B;
+        text-align: left;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -145,5 +212,15 @@ nav span {
 
     .header span {
         width: 35rem;
+    }
+
+    .about-section-paragraph {
+        font-size: 1.6em;
+        width: 50%;
+    }
+
+    .project-section-text-container {
+        border-left: solid 10px #00897B;
+        text-align: left;
     }
 }

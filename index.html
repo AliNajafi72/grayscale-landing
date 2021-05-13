@@ -14,7 +14,7 @@
 <body>
     <nav class="d-flex justify-content-around align-items-center w-100 p-4">
         <b><span>Start Bootstrap</span></b>
-        <div class="d-none d-sm-block">
+        <div class="d-none d-lg-block">
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
@@ -31,15 +31,68 @@
     </header>
     <main class="w-100 h-100">
         <section class="about-section d-flex flex-column w-100 h-100 justify-content-center align-items-center">
-            <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center">
+            <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center text-wrap">
                 <h1 class="about-section-title">Build with Bootstrap 4</h1>
-                <br><p class="w-75 text-center about-section-paragraph">
+                <p class="p-3 p-sm-3 p-md-2 p-lg-2 text-center about-section-paragraph">
                     Grayscale is a free Bootstrap theme created by Start Bootstrap. 
                     It can be yours right now, simply download the template on the preview page.
                     The theme is open source, and you can use it for any purpose, personal or commercial.
                 </p>
             </div>
             <img class="w-75" src="./assets/img/ipad.png"/>
+        </section>
+        <section class="project-section d-flex justify-content-center align-items-center w-100 h-100">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-0">
+                    <div class="col-sm-12 col-lg-8">
+                        <img class="w-100" src="./assets/img/bg-masthead.jpg" alt="Mountain" />
+                    </div>
+                    <div class="col-sm-12 col-lg-4">                        
+                        <div class="d-flex flex-column project-section-text-container ps-0 ps-md-4">
+                            <h1 class="p-4 p-lg-0 m-0">Shoreline</h1>
+                            <p class="p-0 m-0">
+                                Grayscale is a free Bootstrap theme created by Start Bootstrap. 
+                                It can be yours right now, simply download the template on the preview page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section pb-5">
+            <div class="container">
+                <div class="row justify-content-center g-0">
+                    <div class="col-12 col-lg-6">
+                        <img class="w-100" src="./assets/img/demo-image-01.jpg" />
+                    </div>
+                    <div class="misty col-12 col-lg-6 d-flex flex-column justify-content-center p-5">
+                        <h1 class="h1 text-white">Misty</h1>
+                        <p class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nulla fugiat unde? Adipisci, illum soluta.</p>
+                        <div class="line-seperator"></div>
+                    </div>
+                </div>
+                <div class="row g-0 flex-row-reverse ">
+                    <div class="col-12 col-lg-6">
+                        <img class="w-100" src="./assets/img/demo-image-02.jpg" />
+                    </div>
+                    <div class="mountains col-12 col-lg-6 d-flex flex-column justify-content-center align-items-end p-5">
+                        <h1 class="h1 text-white">Mountains</h1>
+                        <p class="h5 text-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nulla fugiat unde? Adipisci, illum soluta.</p>
+                        <div class="line-seperator"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section h-100 w-100">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg>
+                <span class="h3 text-white">Subscribe to recieve updates!</span>
+                <div class="d-flex">
+                    
+                </div>
+            </div>
         </section>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
