@@ -1,6 +1,7 @@
 * {
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 html, body {
     height: 100%;
@@ -103,24 +104,40 @@ nav span {
     line-height: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .header h1 {
-        font-size: 3em;
-    }
+.submit-btn {
+    background-color: #00897B;
+    border: none;
+    padding: 15px 0px 15px 0px;
+    border-radius: 5px;
+    color: white;
+}
 
-    .header span {
-        width: 100%;
-    }
+.email-input {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+}
 
-    .about-section-paragraph {
-        font-size: 1.4em;
-        width: 100%;
-    }
+.contact-box-inner {
+    background-color: white;
+    border-bottom: solid 0.4rem #00897B;
+}
 
-    .project-section-text-container {
-        border-left: none;
-        text-align: center;
-    }
+.contact-box-inner {
+    border-radius: 5px;
+    color: gray;
+}
+
+.contact-box-inner:last-child {
+    color: #00897B;
+}
+
+.little-divider {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #00897B;
 }
 
 .misty, .mountains {
@@ -139,6 +156,58 @@ nav span {
 
 .contact-section {
     background-image: url("../assets/img/bg-signup.jpg");
+    position: relative;
+}
+
+.contact-section::after {
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.4458158263305322) 0%, rgba(0,0,0,1) 71%);
+    height: 100%;
+    width: 100%;
+}
+
+.form-container {
+    position: absolute;
+}
+
+.contact-box {
+    background-color: black;
+}
+
+.social-media-section {
+    background-color: black;
+}
+
+.social-media-section div div {
+    background-color: #1a1a1a;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.copyright-section {
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .header h1 {
+        font-size: 3em;
+    }
+
+    .header span {
+        width: 100%;
+    }
+
+    .about-section-paragraph {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .project-section-text-container {
+        border-left: none;
+        text-align: center;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
